@@ -10,24 +10,31 @@ Original Server Fork: EcoliEater87
 Adapted to Canary Craft (ADSCRAFT): QuizzityMC
 <br>
 
-## To make an eaglercraft 1.12 server, follow the instructions below:
+To make an eaglercraft 1.12 server, follow the instructions below:
 Here is how you can setup a connection:
-<br>
-<br>
+
 First, go to the top of the repo and click on code > codespaces > create codespace
-<br>
 now you have your own free server instance to host eaglercraft. Next you need to run the setup commands:
+
+Create a terminal tab and paste the following:
 <br>
 <br>
-Create a terminal tab and paste the following:<br>
+First:
 <br>
-enter the following: `cd bungee && sudo java -jar bungee.jar`
+cd /workspaces/EaglerServer-1.12/bungee
 <br>
-then, make a new tab and enter the following: cd server && sudo java -jar server.jar
+java -jar bungee.jar
 <br>
-Now go to the ports area and forward (and make public) port `8081`
 <br>
-Load up the client! When you are in, copy the link, paste it in the add server section, replace https:// with wss:// and join!
-Your eaglercraft server is setup!
+Next, open a new terminal window and enter the following:
+<br>
+<br>
+cd /workspaces/EaglerServer-1.12/server
+<br>
+java -Xms512m -Xmx2G -jar server.jar nogui
+<br>
+
+Now go to the ports area and forward (and make public) port 8081
+Load up the client! When you are in, copy the link, paste it in the add server section, replace https:// with wss:// and join! Your eaglercraft server is setup!
 
 PS: You can use this as a normal server too (like properly hosted) just clone this repo and run it in much the same way.
